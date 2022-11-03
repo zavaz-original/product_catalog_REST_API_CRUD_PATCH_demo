@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Products</title>
+</head>
+
+<body>
+    <div>
+      <h1>Products</h1>
+
+      <table border="1">
+        <thead>
+          <tr>
+            {% for header in headers %}
+            <th>{{header}}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for product in json %}
+          <tr>
+            {% for key,value in product.items() %}
+            <td>{{ value }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>  
+</body>
+</html>
+
+<!--
+  https://youtu.be/QnDWIZuWYW0
+  {% if title_arg %}
+     <title> {{ title_arg }}
+  {% else %}
+     <title> FIXED TITLE </title>
+  {% endif %}
+  the video covers also extending templates for reuse
+-->
+
