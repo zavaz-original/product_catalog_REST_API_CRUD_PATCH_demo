@@ -1,5 +1,5 @@
 # Python Flask SQLAlchemy
-# used below video huide to implement GET, POST, DELETE operations. 
+# used below video guide to implement GET, POST, DELETE operations. 
 # https://www.youtube.com/watch?v=qbLc5a9jdXo 
 # Added support for PUT and PATCH operations by own investigations.
 
@@ -103,6 +103,6 @@ def delete_product(id):
 # Tested by Postman
 
 if __name__ == '__main__':
-   app.run(debug= True)
+   app.run(debug= False)
 
 
